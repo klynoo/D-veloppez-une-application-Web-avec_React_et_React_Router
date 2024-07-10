@@ -1,0 +1,2 @@
+trie des fichiers
+créer un composant qui utilise navigate (import { useNavigate } from "react-router-dom")
