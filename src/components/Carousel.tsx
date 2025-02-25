@@ -60,11 +60,14 @@ const ButtonLeft = styled.div`
   font-size: 96px;
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
-
   position: absolute;
   top: 50%;
   left: 23px;
   transform: translate(0%, -50%);
+
+  @media (max-width: 700px) {
+    font-size: 24px;
+  }
 `;
 
 const FrameCounter = styled.span`
@@ -79,15 +82,22 @@ const FrameCounter = styled.span`
   bottom: 25px;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
 `;
 
 const ButtonRight = styled.div`
   font-size: 96px;
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
-
   position: absolute;
   top: 50%;
   right: 23px;
   transform: translate(0%, -50%);
+
+  @media (max-width: 700px) {
+    font-size: 24px;
+  }
 `;
