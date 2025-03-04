@@ -25,6 +25,8 @@ const Container = styled.div`
 
   @media (max-width: 700px) {
     margin: 27px 20px;
+    height: 110px;
+    border-radius: 10px;
   }
 `;
 
@@ -36,6 +38,10 @@ const Opacity = styled.div`
   border-radius: 25px;
   opacity: 0.4;
   z-index: 0;
+
+  @media (max-width: 700px) {
+    border-radius: 10px;
+  }
 `;
 
 const Text = styled.p`
@@ -52,5 +58,7 @@ const Text = styled.p`
 
   @media (max-width: 700px) {
     font-size: 24px;
+    max-width: 70%;
+    margin-left: -40px;
   }
 `;

@@ -53,6 +53,11 @@ const CarouselContainer = styled.div`
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
+
+    @media (max-width: 700px) {
+      height: 255px;
+      border-radius: 10px;
+    }
   }
 `;
 
@@ -84,7 +89,7 @@ const FrameCounter = styled.span`
   transform: translate(-50%, -50%);
 
   @media (max-width: 700px) {
-    font-size: 12px;
+    display: none;
   }
 `;
 

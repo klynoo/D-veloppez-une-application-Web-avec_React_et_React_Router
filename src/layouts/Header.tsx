@@ -14,14 +14,14 @@ const Header: React.FC = () => {
       </ImgContainer>
 
       <Nav>
+        <StyledNavLink to="/" $isActive={location.pathname === "/"}>
+          Accueil
+        </StyledNavLink>
         <StyledNavLink
           to="/a-propos"
           $isActive={location.pathname === "/a-propos"}
         >
           À propos
-        </StyledNavLink>
-        <StyledNavLink to="/" $isActive={location.pathname === "/"}>
-          Accueil
         </StyledNavLink>
       </Nav>
     </HeaderContainer>
@@ -64,6 +64,9 @@ const LinkLogo = styled(Link)`
 const Nav = styled.nav`
   display: flex;
   gap: 57px;
+  @media (max-width: 700px) {
+    gap: 25px;
+  }
 `;
 
 interface StyledNavLinkProps {
